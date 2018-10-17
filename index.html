@@ -2,9 +2,9 @@
 <html lang="zh-CN">
 <head>
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<link rel="stylesheet" href="E:\bootstrap-4.1.3-dist\css\bootstrap.css">
-<script src="E:\��ҵ��ҵ\13\jquery-3.3.1.min.js"></script>
-<script src="E:\��ҵ��ҵ\bootstrap.min.js"></script>
+<link rel="stylesheet" href="bootstrap.css">
+<script src="jquery-3.3.1.min.js"></script>
+<script src="bootstrap.min.js"></script>
 <title>1010111</title>
 <style>
 body{background-color:#FFFFFF;}
@@ -117,10 +117,10 @@ td{height:150px;border-color:red;}
 $(function(){
 	    $("#test li").click(function() {
 		           
-		        $(this).siblings('li').removeClass('zuo');  // ɾ�������ֵ�Ԫ�ص���ʽ
+		        $(this).siblings('li').removeClass('zuo');  // 删除其他兄弟元素的样式
                 $(this).siblings('li').css("background","#E8E8E8"); 
 				
-		        $(this).addClass('zuo');                            // ���ӵ�ǰԪ�ص���ʽ
+		        $(this).addClass('zuo');                            // 添加当前元素的样式
 				$(this).css("background","#6D6D6D");
 
 	    });
@@ -132,7 +132,7 @@ $(function(){
 
 
     });		
-});*/    //��߿����ұ߱�����������
+});*/    //左边控制右边表格及数据载入
 </script>
 </head>
 
@@ -141,16 +141,16 @@ $(function(){
    <div class="row r1">
       <div class="col-md-10 c1">
 	    <div class="row">
-		  <div class="col-xs-4"><img src="images/user.png" style="width:80px;height:80px;" title="��ʾ�û���" alt="δ����"></div>
-		  <div class="col-xs-4" style="padding:27px 5px;"><a href="#">ѧϰ����</a></div>
-	      <div class="col-xs-4" style="padding:27px 5px;"><a href="#">��������</a></div>
-	      <div class="col-xs-4" style="padding:27px 5px;"><a href="#">ѧϰ��̳</a></div>
+		  <div class="col-xs-4"><img src="images/user.png" style="width:80px;height:80px;" title="显示用户名" alt="未加载"></div>
+		  <div class="col-xs-4" style="padding:27px 5px;"><a href="#">学习中心</a></div>
+	      <div class="col-xs-4" style="padding:27px 5px;"><a href="#">个人中心</a></div>
+	      <div class="col-xs-4" style="padding:27px 5px;"><a href="#">学习论坛</a></div>
 	    </div>
 	  </div>
 	  <div class="col-md-2 c2">
 	    <div class="row">		  
-	      <div class="col-xs-6 col-xs-offset-6" style="padding:27px 5px;"><a href="#">����</a></div>
-	      <div class="col-xs-6 col-xs-offset-6" style="padding:27px 5px;"><a href="#">��ϵ����</a></div>
+	      <div class="col-xs-6 col-xs-offset-6" style="padding:27px 5px;"><a href="#">返回</a></div>
+	      <div class="col-xs-6 col-xs-offset-6" style="padding:27px 5px;"><a href="#">联系我们</a></div>
 		</div>
 	  </div>
    </div>
@@ -158,21 +158,21 @@ $(function(){
 <div class="zhong-bian">
     <div class="zuo-bian" style="position:absolute;left:20px;">
        <ul id="test">
-	      <li class="zuo zuo-1"><a href="#">�γ�</a></li>
-		  <li class="zuo zuo-1"><a href="#">ʵս</a></li>
-		  <li class="zuo zuo-1"><a href="#">�ʼ�</a></li>
-		  <li class="zuo zuo-1"><a href="#">�ҵ�����</a></li>
-		  <li class="zuo zuo-1"><a href="#">�ҵ��ղ�</a></li>
+	      <li class="zuo zuo-1"><a href="#">课程</a></li>
+		  <li class="zuo zuo-1"><a href="#">实战</a></li>
+		  <li class="zuo zuo-1"><a href="#">笔记</a></li>
+		  <li class="zuo zuo-1"><a href="#">我的问题</a></li>
+		  <li class="zuo zuo-1"><a href="#">我的收藏</a></li>
       </ul>
     </div>
 	<div class="you-bian" style="position:absolute;">
 	  <div class="table-1">
 	    <table class="table">
 		    <tr>
-			    <th>�ҵĿγ�</th>
-				<th>����</th>
-				<th>ʱ��</th>
-				<th>�ɼ�</th>
+			    <th>我的课程</th>
+				<th>进度</th>
+				<th>时长</th>
+				<th>成绩</th>
 		    </tr>
 			<tr>
 			    <td></td>
@@ -209,12 +209,12 @@ $(function(){
 	  </div>
 	  <div class="youxia">
 	     <div class="youxia-1">
-	       <span>��ҳ</span>
-		   <span>��һҳ</span>
+	       <span>首页</span>
+		   <span>上一页</span>
 		   <a href="#" calss="text-youxia">1</a>
 		   <a href="#" class="text-youxia">2</a>
-		   <a href="#">��һҳ</a>
-		   <a href="#">βҳ</a>
+		   <a href="#">下一页</a>
+		   <a href="#">尾页</a>
 		 </div>
 	  </div>
 	</div>
@@ -222,19 +222,19 @@ $(function(){
 <div class="bottom-0"><hr style="background-color:#FF0000;margin:0;height:3px;">
      <div  class="bottom-11">
 	     <ul >
-		    <li class="bottom-1"><a href="#">��վ��ҳ</a></li>
-			<li class="bottom-1"><a href="#">��ҵ����</a></li>
-			<li class="bottom-1"><a href="#">�˲���Ƹ</a></li>
-			<li class="bottom-1"><a href="#">��ʦ��ļ</a></li>
-			<li class="bottom-1"><a href="#">�������</a></li>
-			<li class="bottom-1"><a href="#">��ѧ��ѧ</a></li>
-			<li class="bottom-1"><a href="#">��������</a></li>
+		    <li class="bottom-1"><a href="#">网站首页</a></li>
+			<li class="bottom-1"><a href="#">商业合作</a></li>
+			<li class="bottom-1"><a href="#">人才招聘</a></li>
+			<li class="bottom-1"><a href="#">教师招募</a></li>
+			<li class="bottom-1"><a href="#">意见反馈</a></li>
+			<li class="bottom-1"><a href="#">爱学大学</a></li>
+			<li class="bottom-1"><a href="#">友情链接</a></li>
 			<li class="bottom-1"><p style="color:#FFFFFF;">@Mracotomg disanxiaozu3300583552</p></li>
          </ul>	
 	</div>
 </div>
 <div class="zuixia">
-    <p style="margin-right:20px;color:white;float:right;"><a href="#">�����ֻ���</a></p>
+    <p style="margin-right:20px;color:white;float:right;"><a href="#">访问手机版</a></p>
 </div>
 
 </body>
